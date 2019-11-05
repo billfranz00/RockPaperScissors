@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, Paper, Scissors</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+	<header>
+		<h1>Rock, Paper, Scissors</h1>
+	</header>
+
+	<section class="game">
+		<div class="game__section">
+			<h2 class="game__text game__text--margin">Select Mode of Play</h3>
+			<button class="game__button">Player VS Computer</button>
+			<button class="game__button">Computer VS Computer</button>
+		</div>
+		<div class="game__section">
+			<div class="game__circle">
+				<h4 class="game__text game__text--med">Timer</h4>
+				<p class="game__text game__text--large">5</p>
+			</div>
+
+			<h3 class="game__text game__text--black">Computer</h3>
+			<hr class="game__bar">
+			<h3 class="game__text game__text--black">Player</h3>
+
+			<h2 class="game__text game__text--margin">Choose your move</h2>
+
+			<ul class="game__list">
+				<li class="game__list-item">
+					<button>
+						<img class="game__img game__img--rock" src="img/rock.jpg" alt="Rock">
+					</button>
+				</li>
+				<li class="game__list-item">
+					<button>
+						<img class="game__img game__img--paper" src="img/paper.jpg" alt="Paper">
+					</button>
+				</li>
+				<li class="game__list-item">
+					<button>
+						<img class="game__img game__img--scissor" src="img/scissors.jpg" alt="Scissor">
+					</button>
+				</li>
+			</ul>
+
+		</div>
+		<div class="game__section">
+			<img class="game__img game__img--top" src="img/rock.jpg" alt="Rock">
+
+			<h2 class="game__text game__text--large game__text--margin">You Lose!</h2>
+
+			<button class="game__button game__button--inline-block">Play again!</button>
+			<button class="game__button game__button--inline-block">Change mode</button>
+
+			<ul class="game__list">
+				<li class="game__list-item">
+					<img class="game__img" src="img/rock.jpg" alt="Rock">
+				</li>
+				<li class="game__list-item">
+					<img class="game__img game__img--paper" src="img/paper.jpg" alt="Paper">
+				</li>
+				<li class="game__list-item">
+					<img class="game__img game__img--scissor" src="img/scissors.jpg" alt="Scissor">
+				</li>
+			</ul>
+
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
