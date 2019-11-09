@@ -12,58 +12,47 @@
 
 	<section class="game">
 		<div class="game__section">
-			<h2 class="game__text game__text--margin">Select Mode of Play</h3>
-			<button class="game__button">Player VS Computer</button>
-			<button class="game__button">Computer VS Computer</button>
-		</div>
-		<div class="game__section">
-			<div class="game__circle">
-				<h4 class="game__text game__text--med">Timer</h4>
-				<p class="game__text game__text--large">5</p>
+			<div class="js-start-game">
+				<h2 class="game__text game__text--margin">Select Mode of Play</h2>
+				<button class="js-pvc-button game__button">Player VS Computer</button>
+				<button class="js-cvc-button game__button">Computer VS Computer</button>
 			</div>
 
-			<h3 class="game__text game__text--black">Computer</h3>
-			<hr class="game__bar">
-			<h3 class="game__text game__text--black">Player</h3>
+			<div class="js-mid-game" style="display: none;">
+				<div class="game__circle">
+					<h4 class="game__text game__text--med">Timer</h4>
+					<p class="game__text game__text--large">5</p>
+				</div>
 
-			<h2 class="game__text game__text--margin">Choose your move</h2>
+			
+				<h3 class="game__text game__text--black">Computer</h3>
+				<hr class="game__bar">
+				<h3 class="js-user-type game__text game__text--black">Player</h3>
+				<h4 class="js-user-message game__text game__text--margin">Choose your move</h2>
+			</div>
 
-			<ul class="game__list">
+			<div class="js-end-game" style="display: none;">
+				<img class="js-end-game game__img game__img--top" src="img/rock.jpg" alt="Rock">
+				<h2 class="js-end-game game__text game__text--large game__text--margin" style="display: none;">You Lose!</h2>
+				<button class="game__button game__button--inline-block">Play again!</button>
+				<button class="game__button game__button--inline-block">Change mode</button>
+			</div>
+
+			<ul class="js-choose-option game__list" style="display: none;">
 				<li class="game__list-item">
 					<button>
-						<img class="game__img game__img--rock" src="img/rock.jpg" alt="Rock">
+						<img class="game__img" src="img/rock.jpg" alt="Rock">
 					</button>
 				</li>
 				<li class="game__list-item">
 					<button>
-						<img class="game__img game__img--paper" src="img/paper.jpg" alt="Paper">
+						<img class="game__img" src="img/paper.jpg" alt="Paper">
 					</button>
 				</li>
 				<li class="game__list-item">
 					<button>
-						<img class="game__img game__img--scissor" src="img/scissors.jpg" alt="Scissor">
+						<img class="game__img" src="img/scissors.jpg" alt="Scissor">
 					</button>
-				</li>
-			</ul>
-
-		</div>
-		<div class="game__section">
-			<img class="game__img game__img--top" src="img/rock.jpg" alt="Rock">
-
-			<h2 class="game__text game__text--large game__text--margin">You Lose!</h2>
-
-			<button class="game__button game__button--inline-block">Play again!</button>
-			<button class="game__button game__button--inline-block">Change mode</button>
-
-			<ul class="game__list">
-				<li class="game__list-item">
-					<img class="game__img" src="img/rock.jpg" alt="Rock">
-				</li>
-				<li class="game__list-item">
-					<img class="game__img game__img--paper" src="img/paper.jpg" alt="Paper">
-				</li>
-				<li class="game__list-item">
-					<img class="game__img game__img--scissor" src="img/scissors.jpg" alt="Scissor">
 				</li>
 			</ul>
 
