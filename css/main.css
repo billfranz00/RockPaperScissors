@@ -94,6 +94,10 @@ h1 {
 	justify-content: space-around;
 }
 
+.game__list-button {
+	cursor: pointer;
+}
+
 .game__img {
 	height: 50px;
 	width: auto;
