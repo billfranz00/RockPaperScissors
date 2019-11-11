@@ -82,6 +82,10 @@ h1 {
 	cursor: pointer;
 }
 
+.game__button--dim {
+	opacity: 0.25;
+}
+
 .game__button--inline-block {
 	display: inline-block;
 	width: 45%;
