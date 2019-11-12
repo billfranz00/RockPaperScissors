@@ -55,6 +55,36 @@ finishButton.addEventListener('click', () => {
 	startContent.style.display = "";
 });
 
+function chooseMode() {
+	invokeTimer();
+	if (!mode) {
+		removeChooseOptionEvent();
+	}
+	else {
+		Array.prototype.forEach.call(options, option => {
+			option.addEventListener("click", chooseOption);
+		});
+	}
+}
+
+function chooseOption() {
+	clearInterval(timer);
+	finishGame(this.value);
+}
+
+function invokeTimer() {
+	let time = 5;
+	gameTime.innerHTML = time;
+	timer = setInterval(() => {
+		time--;
+		gameTime.innerHTML = time;
+		if (time === 0) {
+			finishGame();
+			clearInterval(timer);
+		}
+	}, 1000);
+}
+
 function finishGame(value) {
 	const playerOne = randomNumberGenerator(),
 		playerTwo = value ? Number(value) : randomNumberGenerator();
@@ -83,36 +113,6 @@ function finishGame(value) {
 
 	midContent.style.display = "none";
 	endContent.style.display = "";
-}
-
-function chooseOption() {
-	clearInterval(timer);
-	finishGame(this.value);
-}
-
-function chooseMode() {
-	invokeTimer();
-	if (!mode) {
-		removeChooseOptionEvent();
-	}
-	else {
-		Array.prototype.forEach.call(options, option => {
-			option.addEventListener("click", chooseOption);
-		});
-	}
-}
-
-function invokeTimer() {
-	let time = 5;
-	gameTime.innerHTML = time;
-	timer = setInterval(() => {
-		time--;
-		gameTime.innerHTML = time;
-		if (time === 0) {
-			finishGame();
-			clearInterval(timer);
-		}
-	}, 1000);
 }
 
 function removeChooseOptionEvent() {
